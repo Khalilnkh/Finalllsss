@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- Background Area Start -->
+        @await Component.InvokeAsync("Slider")
+		<!-- Background Area End -->
+        <!-- Notice Start -->
+        <section class="notice-area pt-150 pb-150">
+            <div class="container">
+                <div class="row">
+                     @await Component.InvokeAsync("NoticeBoard")
+                     @await Component.InvokeAsync("ProTeacher")
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Notice End -->
+        <!-- Choose Start -->
+        <section class="choose-area pb-85 pt-77">
+            <div class="container">
+                <div class="row">
+                    @await Component.InvokeAsync("WhyChoose")
+                </div>
+            </div>
+        </section>
+        <!-- Choose Area End -->
+        <!-- Courses Area Start -->
+        <div class="courses-area pt-150 text-center">
+            @await Component.InvokeAsync("CourseHome")
+        </div>
+        <!-- Courses Area End -->
+        <!-- Event Area Start -->
+        <div class="event-area one text-center pt-140 pb-150">
+            <div class="container">
+                <div class="row">
+                     <div class="col-xs-12">
+                        <div class="section-title">
+                            <img src="~/assest/img/icon/section.png" alt="section-title">
+                            <h2>UPCOMMING EVENTS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @*@await Component.InvokeAsync("EventsHome")*@
+                </div>
+            </div>
+        </div>
+        <!-- Event Area End -->
+        <!-- Testimonial Area Start -->
+        <div class="testimonial-area pt-110 pb-105 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="testimonial-owl owl-theme owl-carousel">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12">
+                            <div class="single-testimonial">
+                                @await Component.InvokeAsync("FooterSlider")
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Area End -->
+        <!-- Blog Area Start -->
+        <div class="blog-area pt-150 pb-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-title text-center">
+                            <img src="~/assest/img/icon/section.png" alt="section-title">
+                            <h2>LATEST FROM BLOG</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @await Component.InvokeAsync("Blog")
+                </div>
+            </div>
+        </div>
+        <!-- Blog Area End -->

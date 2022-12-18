@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ProTeacher>
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="notice-right">
+        @foreach (ProTeacher proTeacher in Model)
+        {
+            <div class="single-notice-right mb-25 pb-25">
+                <h3>@proTeacher.MainTitle</h3>
+                <p>@proTeacher.Description </p>
+            </div>
+
+        }
+
+    </div>
+</div>

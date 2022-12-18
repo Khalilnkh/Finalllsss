@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FooterSlider>
+<div class="testimonial-info">
+    @foreach (FooterSlider footerSlider in Model)
+    {
+        <div class="testimonial-img">
+            <img src="~/assest/img/testimonial/@footerSlider.Image" alt="testimonial">
+        </div>
+        <div class="testimonial-content">
+            <p>@footerSlider.Description</p>
+            <h4>@footerSlider.FullName</h4>
+            <h5>@footerSlider.Position</h5>
+        </div>
+
+    }
+</div>

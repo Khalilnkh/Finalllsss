@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Slider>
+
+<section id="slider-container" class="slider-area"> 
+    
+   
+        <div class="slider-owl owl-theme owl-carousel"> 
+            @foreach (Slider slider in Model)
+            {
+                 <div class="single-slide item" style="background-image: url(/assest/img/slider/@slider.Image)">
+                    <!-- Start Slider Content -->
+                    <div class="slider-content-area">  
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7 col-md-offset-left-5"> 
+                                    <div class="slide-content-wrapper">
+                                        <div class="slide-content">
+                                            <h3> @slider.MainTitle </h3>
+                                            
+                                            <p>@slider.Description   </p>
+                                            <a class="default-btn" href="@slider.PageLink">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Slider Content -->
+                </div>
+            
+            }  
+
+               					
+         </div>
+   
+           
+</section>
+
+<!-- Start Slingle Slide -->
+               

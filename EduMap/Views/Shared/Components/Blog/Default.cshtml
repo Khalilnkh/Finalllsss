@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Blog>
+
+@foreach (Blog blog in Model)
+{
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="single-blog">
+            <div class="blog-img">
+                <a href="blog-details.html"><img src="~/assest/img/blog/@blog.BlogImage" alt="blog"></a>
+                <div class="blog-hover">
+                    <a href="blog-details.html"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-top">
+                    <p>@blog.Name  /  @blog.DateTime  /  <i class="fa fa-comments-o"></i> @blog.Comment</p>
+                </div>
+                <div class="blog-bottom">
+                    <h2><a href="blog-details.html">@blog.Title </a></h2>
+                    <a href="blog-details.html">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

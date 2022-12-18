@@ -1,0 +1,11 @@
+﻿@model IEnumerable<WhyChoose>
+<div class="col-md-8 col-md-offset-left-4 col-sm-8 col-md-offset-left-4">
+    @foreach (WhyChoose whyChoose in Model)
+    {
+        <div class="choose-content text-left">
+            <h2>@whyChoose.MainTitle </h2>
+            <p>@whyChoose.Description </p>
+            <a class="default-btn" href="@whyChoose.PageLink">view courses</a>
+        </div>
+    }
+</div>
